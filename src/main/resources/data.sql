@@ -1,3 +1,13 @@
+INSERT INTO users (email, password) VALUES ('alex@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
+INSERT INTO users (email, password) VALUES ('maria@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
+
+INSERT INTO roles (authority) VALUES ('ROLE_OPERATOR');
+INSERT INTO roles (authority) VALUES ('ROLE_ADMIN');
+
+INSERT INTO user_roles (user_id, role_id) VALUES (1, 1);
+INSERT INTO user_roles (user_id, role_id) VALUES (2, 1);
+INSERT INTO user_roles (user_id, role_id) VALUES (2, 2);
+
 INSERT INTO tb_department(name) VALUES ('Sales');
 INSERT INTO tb_department(name) VALUES ('Management');
 INSERT INTO tb_department(name) VALUES ('Training');
